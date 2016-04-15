@@ -22,13 +22,17 @@ profile::chocolatey:
 
 ## MODULE DEPENDENCIES:
 ```
+puppet module install badgerious-windows_env
 puppet module install chocolatey-chocolatey
+puppet module install puppetlabs-powershell
 ```
 ## USAGE:
 
 #### Puppetfile:
 ```
+mod "badgerious-windows_env", '2.2.2'
 mod "chocolatey-chocolatey",  '1.2.1'
+mod "puppetlabs-powershell", '1.0.6'
 
 mod 'validation_script',
   :git => 'https://github.com/firechiefs/validation_script',
