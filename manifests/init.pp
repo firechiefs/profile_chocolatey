@@ -16,6 +16,9 @@
 # puppet module install puppetlabs-powershell
 
 class profile_chocolatey {
+  # profile_dotnet requirement for chocolatey
+  require profile_dotnet
+
   # HIERA LOOKUP:
   # --> PUPPET CODE VARIABLES:
   # URL of repository server
